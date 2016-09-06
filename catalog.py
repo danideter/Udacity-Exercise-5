@@ -19,7 +19,7 @@ APP.secret_key = 'for SC13NC3! Hahahaha!'
 
 def connect():
     """Returns a database connection."""
-    return psycopg2.connect("dbname=catalogdb")
+    return psycopg2.connect("dbname=catalogdb user=postgres")
 
 
 def check_user(token):
